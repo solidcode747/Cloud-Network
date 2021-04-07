@@ -84,7 +84,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+![docker ps](https://raw.githubusercontent.com/solidcode747/Cloud-Network/main/Images/docker_ps_output.png?token=AR7YBNBALNUDZJJ2BOQ7YHDANZBMG)
 
 The elk-server playbook is shown below.
 ```yaml
