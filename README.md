@@ -5,7 +5,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Diagram](images/Diagram_Final_Renzo_Tragsiel.png)
+![Diagram](Images/Diagram_Final_Renzo_Tragsiel.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the configuration files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -97,7 +97,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker ps output](images/docker_ps_output.png)
+![docker ps output](Images/docker_ps_output.png)
 
 <br />
 
