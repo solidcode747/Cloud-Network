@@ -1,6 +1,7 @@
-===============================================================================================================================
-*********** ALL COMMANDS, SHORTCUTS, & STEPS FROM DAY 3 OF PROJECT WEEK (UNIT 13.03) ***********
-===============================================================================================================================
+====================================================================================================
+*********** Deliverable for the Bonus Activity of Unit 13, "05_Kibana-Continued"      **********
+***********     SSH Barrage Bonus Activity.                                           **********
+====================================================================================================
 **Hello Tyler,**
 
 This is a copy of my terminal session when I completed the "stress testing" bonus activity of the Unit 13 homwork.
@@ -9,7 +10,7 @@ my deliverable for the bonus section of Unit 13 Homework.  Also, you may find th
 when I began to carry out the SSH Barrage onto the three DVWA servers.
 
 
-**My observation and take-away after I completed this activity, my Response:**
+**My observation and take-away after I completed this activity (my Response):**
 I'm placing my write up for this bonus up here. After carring out purposely repeated failed SSH attemtps
 to log into  each of the DVWA servers, one can see the effectiveness of Kibana's Elasticsearch log analitics.
 On Kibana, one can Zoom into the log history of every host machine being monitored in real time.  Metricbeat logs activity every
@@ -18,9 +19,9 @@ every failed attempto to log in.  They provide fantastic visual analitics that w
 protecting any networkd, physical or  Cloud based.  Kibana's Log analitics are very impressive.
 
 
-===============================================================================================================================
-******** THIS IS THE TERMINAL SESSION DURING THE CLASS, UNIT 13.03 (PROJECT WEEK 1, DAY 3) (3/23/21) ***********
-===============================================================================================================================
+=================================================================================================================
+***THIS IS THE TERMINAL SESSION DURING THE CLASS, UNIT 13.03 (PROJECT WEEK 1, DAY 3) (3/23/21) ***********
+=================================================================================================================
 
 **SESSION STARTS BY SSH'ING INTO THE JUMPBOX**
 **Please scroll down to line 267**
