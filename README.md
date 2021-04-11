@@ -1,5 +1,5 @@
 # Cloud Network
-# This is a collection of Linux scripts and Ansible Scripts to make a Virtual Network with 3 DVWA servers.
+# This is a collection of Ansible Scripts to make a Virtual Network with 3 DVWA servers.
 
 ## Automated ELK Stack Deployment
 
@@ -28,7 +28,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly **available, stable, and with plenty of redundancy**, in addition to restricting **inbound access** to the network.  The load balancer works as a traffic manager distributing HTTP traffic to the three DVWA Web Servers as evenly as possible increasing stability.  It also works as a single point of entry for all HTTP traffic to the DVWA Web Servers, making it easier to monitor inbound and outbound traffic by limiting the points of entry to one point, port 80, in the network.
-Through the use of a Jumpbox and an additional Ansible Docker-container (inside the Jumpbox), we protect the DVWA Web Servers by only allowing the sysadmin team to be able to access the DVWA Web Servers only through the Ansible container (inside the Jumpbox) via SSH only.  This is done by setting up two firewall rules: (a) one that only allow SSH access with RSA key on port 22 to the Jumpbox only from the sysadmin's home IP, and (b) another rule that only allows SSH access on port 22 to all the VMs in the VNet only to the Jumpbox with an RSA key.  This reinforces an airtight approach to cloud management.
+Through the use of a Jumpbox and an additional Ansible Docker-container (inside the Jumpbox), we protect the DVWA Web Servers by only allowing the sysadmin team to be able to access the DVWA Web Servers only through the Ansible container via SSH only.  This is done by setting up two firewall rules: (a) one that only allows SSH access with RSA key on port 22 to the Jumpbox only from the sysadmin's home IP, and (b) another rule that only allows SSH access on port 22 to all the VMs in the VNet from the Jumpbox with an RSA key only.  This reinforces an airtight approach to cloud management.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system resources from outside the network by efficiently analyzing and normalizing systemlogs.  The ELK stack is a compilation of three popular open-source projects: Elasticsearch, Logstash, and Kibana.  Aside from running Elasticsearch, Logstash, and Kibana, it also runs beats.  This Elk-Stack deployment runs these two beats: Filebeat and Metricbeat.   
 - Filebeat is a system designed to monitor changes to any and all **files** in the DVWA servers on an on-going basis.
@@ -253,11 +253,13 @@ The playbook below installs metricbeat on the target hosts:
 
 To recap:
 
-The playbook for elk-server is the install_elk.yml
+The playbook for elk-server is the `install_elk.yml`
 
-The playbook for filebeat is the filebeat-playbook.yml
+The playbook for filebeat is the `filebeat-playbook.yml`
 
-The playbook for metricbeat is the metricbeat-playbook.yml
+The playbook for metricbeat is the `metricbeat-playbook.yml`
+
+You may find these three `.yml` files in the Ansible directory within this repo.
 
 <br />
 
